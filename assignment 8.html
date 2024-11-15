@@ -1,0 +1,33 @@
+<html>
+    <head></head>
+    <h1 id="n"></h1>
+    <body>
+        
+        <button style="background-color: green; margin-left: 100px;" onclick="abc(event)">like
+        </button> <span id="p1" style="color:black;"></span>
+
+        <br>
+        <br>
+        <button style="background-color: red;  margin-left: 100px;" onclick="xyz(event)">Dislike
+        </button> <span id="p2" style="color: rgb(38, 0, 255);"></span>
+
+            
+        <script>
+                var s=document.getElementById('n')
+                s.innerText='Like and Dislike Button';
+                s.style.color='red';
+                
+                
+                    k=0
+                    m=0
+                function abc(ev){
+                    k++;
+                    var x=document.getElementById('p1').innerHTML=k
+                }
+                function xyz(ev){
+                    m++;
+                    var y=document.getElementById('p2').innerHTML=m
+                }
+        </script>
+    </body>
+</html>

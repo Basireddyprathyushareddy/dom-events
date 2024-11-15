@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+    <h1 id="p"></h1>
+    <body>
+           <img id="pp" style="width: 20%;height: 20%; margin-left: 30%;"
+            src="https://static.vecteezy.com/system/resources/previews/028/881/013/non_2x/lightbulb-idea-lamp-ai-generative-png.png" alt="">
+            <br>
+        <button id="pr" style="margin-left:37%;background-color: yellow;" id="a1"  onclick="abc()">ON</button>
+       
+        <script>
+              var x=document.getElementById('p')
+              x.innerHTML=' show bulb on/off image using  toggle button';
+              x.style.color='red';
+            function abc(){
+               var d=document.getElementById('pr')  
+               var k=document.getElementById('pp')
+               if(k.src==="https://static.vecteezy.com/system/resources/previews/028/881/013/non_2x/lightbulb-idea-lamp-ai-generative-png.png"){
+                   k.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQbPxp1kbGj3JVqWYRw_I-38GaHZ80dWXYwQ&s"
+                 d.innerHTML='OFF' 
+               }
+               else{
+                 (k.src="https://static.vecteezy.com/system/resources/previews/028/881/013/non_2x/lightbulb-idea-lamp-ai-generative-png.png")
+                 d.innerHTML='ON'
+               }
+            }    
+        </script>
+    </body>
+</html>
+
+
+

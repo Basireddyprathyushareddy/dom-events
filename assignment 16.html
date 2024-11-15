@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <style>
+            #a1{ border: 1px solid; width: 300px; height: 300px; }
+        </style>
+    </head>
+     <body>
+        <div id="a1" onclick="abc()"><img id="a6" src=""></div>
+        <script> 
+            var ar =['https://www.burlingtonfreepress.com/gcdn/presto/2020/09/25/NTHR/fa986fbc-935e-46d1-b214-21bac35c8497-8587.jpeg?width=1200&disable=upscale&format=pjpg&auto=webp','https://static.scientificamerican.com/sciam/cache/file/C37174A9-488C-49D4-B9C79B4E8EB39287_source.jpg?w=600','https://t4.ftcdn.net/jpg/05/67/13/13/360_F_567131349_gtgKLNWiXXql8e39j94k0KCLNAIHlAEB.jpg','https://www.marthastewart.com/thmb/J9_7YtrKi5R0fEpT1tClT6TVjlY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/dracula-monkey-face-orchid-0718-23c698bf2d7d4cada62ca2b2e7696084-horiz-0623-7213943b22454acca6fd40584c2e718b.jpg']
+            function abc(){
+                var a = document.getElementById("a6");
+                a.src=ar[i];
+                i++;
+                a.style.width='300';
+                a.style.height='300';
+                if (i==ar.length) {
+                    i=0
+                }
+               console.log(i);
+            }
+        </script>
+     </body>
+</html>

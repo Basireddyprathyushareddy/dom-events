@@ -1,0 +1,54 @@
+<html>
+    <head></head>
+    <style>
+          #d1{
+            
+             display: flex;
+             flex-direction: column;
+        }
+          #d1 img{
+             padding: 10px;
+             width: 300px;
+            
+        }
+        #box{
+             display: flex;
+            
+        }
+         #previewimage{
+                 width: 500%; 
+         }         
+        
+
+    </style>
+    <body>
+        <div id="box">
+            <div id="d1">
+
+            </div>
+            <div id="preview">
+                <img id="previewimage" src="" alt="">
+    
+            </div>
+        </div>
+        <script>
+            var  images =["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAye5SfowBLvXYETXK_PJIyGy6M85xIvs9Yw&s",
+           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1LF5q05fO7JuvNhGlVq61Jpg89fe2QhKLzA&s",
+           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfADwLpi4QqP5so5tJRrhidw5LasTsRg21nA&s",
+           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS13gdNb96jygz0mx2y1y__ykyymcxNfrazpg&s"
+
+            ]
+            images.forEach(function(img){
+                 var nimg=document.createElement("img")
+                 nimg.src=img;
+                 nimg.onmouseover=function(event){
+                    document.getElementById("previewimage").src= event.target.src;
+                 }
+                 document.getElementById("d1").appendChild(nimg)
+
+            })
+                 document.getElementById("previewimage").src=images[0]
+           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+       
+          
+
+
+
+
+
+           
+        <div id="p" onclick="abc()"  style="border: 2px solid; height: 250px; width: 350px; border-color: blueviolet;"></div>
+         <script>
+            var ar = ['pink', 'darkgreen', 'blue', 'yellow', 'gray' ,'red'];
+            var i=0;
+            function abc(){
+                var d=document.getElementById('p')
+                d.style.backgroundColor=ar[i];
+                i=(i+1)%ar.length;
+            }
+
+            
+
+        </script>
+    </body>
+</html>

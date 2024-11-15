@@ -1,0 +1,39 @@
+<html>
+    <head></head>
+    <h1 id="p"></h1>
+    <body>
+    <style>
+         #b1 {
+             border: 2px solid;
+             width: 40%;
+             height: 30%;
+             margin-left: 25%;
+         }
+        </style>
+    <body>
+        <div id="b1">
+            
+        </div>
+        <br><br>
+       
+        <button style="margin-left: 40%;background-color: yellowgreen;" id="a1"  onclick="abc(event)">Toggle</button>
+       
+        <script>
+              var x=document.getElementById('p')
+              x.innerHTML='change background color of box using button';
+              x.style.color='red';
+
+               function abc(ev){
+                 var v=document.getElementById('b1')
+                 v.style.backgroundColor=v.style.backgroundColor==='yellow'?'white':'yellow'
+               }
+
+
+
+
+
+        </script>
+       
+           
+    </body>
+</html>

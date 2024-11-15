@@ -1,0 +1,20 @@
+<html>
+<head></head>
+<body>
+      <center>
+          <h3 style="color: red;">Add Students</h3>
+           <input type="text"  id="a1">
+            <button style="background-color: yellow;" onclick="abc()">Add Students</button>
+          </center>
+             <ul id="a2"></ul>
+           <script>
+            function abc(){
+   var a = document.getElementById("a1").value;
+   var b = document.createElement("li");
+   b.innerText=a;
+   document.getElementById("a2").appendChild(b);
+   }
+           </script>
+          </body>
+</html>
+
